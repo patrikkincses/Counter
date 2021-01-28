@@ -1,0 +1,102 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+html {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: #2A4B7C;
+    background-image: linear-gradient(to bottom right, #009B77, #00539C, #122A4E);
+    background-repeat: no-repeat;
+}
+div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 5vmin;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+input, select {
+    font-size: 1em;
+    margin: 5px;
+    padding: 5px 10px;
+    border: 2px solid #FFF;
+    display: inline-block;
+    max-width: 95%;
+}
+input, select, select option { 
+    color: white;
+    background-color: rgba(0,0,0,0);
+    box-shadow: 1px 1px 1px 1px #444, 1px 1px 1px 1px #444 inset;
+    text-shadow: 2px 2px 1px #444, 2px 2px 2px #444;
+}
+
+ul, ol {
+    max-width: 400px;
+    margin: auto;
+    padding: 0 5vw;
+}
+li {
+    font-size: 1.5em;
+    position: relative;
+    max-width: 80%;
+}
+li > ins {
+    color: black;
+}
+
+.error {
+    width: 100%;
+    margin: 0;
+    color: pink;
+    visibility: hidden;
+    order: 100;
+    align-self: flex-end;
+    text-align: right;
+}
+.active {
+    box-shadow: 1px 1px 1px 1px #444, 1px 1px 1px 1px #444 inset, 0 0 5px 3px skyblue;
+}
+.inactive {
+    box-shadow: 1px 1px 1px 1px #444, 1px 1px 1px 1px #444 inset;
+}
+.noStyle {
+    list-style-type: none;
+}
+
+.pagination {
+    margin-top: 10px;
+    text-align: center;
+}
+.pagination > * {
+    font-weight: bold;
+}
+.pagination > span {
+    font-size: 2em;
+    margin: 0;
+    padding: 5px;
+    vertical-align: top;
+}
+
+ins {
+    position: absolute;
+    right: -20%;
+    text-decoration: none;
+    display: inline-block;
+}
+ins span {
+    color: white;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.animable {
+    display: none;
+}

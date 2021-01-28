@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo list</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="animable">My Simple TODO list</h1>
+        <div>
+            <select id="list_type" name="list_type" class="animable">
+                <option value="ul" selected>simple list</option>
+                <option value="ul">bullet list</option>
+                <option value="ol">numbered list</option>
+            </select>
+            <input type="submit" value="Create new list" id="ButtonNewList" class="animable">
+            <input type="submit" value="Delete list" id="ButtonDeleteList" class="animable">
+        </div>
+        <p class="animable" style="width: 100%; border-bottom: 1px solid white;"></p>
+        <div style="justify-content: end;">
+            <input type="text" placeholder="Add a new todo item..." size="32" class="animable" id="todoText" />
+            <input type="submit" value="Add todo" id="todoButtonAdd" class="animable">
+            <input type="submit" value="Reset list" id="todoButtonReset" class="animable">
+            <p class="error">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        </div>
+        
+
+        <nav class="pagination animable">
+            <input type="submit" value="⯇⯇" id="todoListFirst">
+            <input type="submit" value="⯇" id="todoListPrev">
+            <span id="indexer">1</span>
+            <input type="submit" value="⯈" id="todoListNext">
+            <input type="submit" value="⯈⯈" id="todoListLast">
+        </nav>
+
+        <h2 class="animable">Todos:</h2>
+        <main id="listsContainer">
+            <ul class="todoList noStyle">
+            </ul>
+        </main>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
